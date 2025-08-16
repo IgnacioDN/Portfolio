@@ -29,14 +29,19 @@ I’m a passionate Front End Developer who loves bringing ideas to life in the b
               <button className="btn-primary" onClick={scrollToContact}>
                 Get In Touch
               </button>
-              <button className="btn-secondary">
+              <a 
+                href="/cv/Ignacio-Agustín-Díaz-Neila-CV.pdf" 
+                download="Ignacio-Agustín-Díaz-Neila-CV.pdf"
+                className="btn-secondary"
+                aria-label="Download CV"
+              >
                 <FaDownload />
                 Download CV
-              </button>
+              </a>
             </div>
             
             <div className="hero-social">
-              <a href="https://github.com/IgnacioDN/NovaStore/tree/master" className="social-link" aria-label="GitHub">
+              <a href="https://github.com/IgnacioDN" className="social-link" aria-label="GitHub">
                 <FaGithub />
               </a>
               <a href="https://www.linkedin.com/in/ignacio-agustin-diaz-neila-0359581b4/" className="social-link" aria-label="LinkedIn">

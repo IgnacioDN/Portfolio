@@ -9,7 +9,7 @@ const projects = [
     title: 'NovaStore E-commerce',
     description: 'A fully responsive e-commerce web app developed with React, featuring product catalog, filtering, shopping cart, user authentication, and a seamless checkout flow. Built for optimal performance and modern UI/UX.',
     technologies: ['React', 'React Router', 'Context API', 'CSS3', 'JavaScript', 'Netlify'],
-    github: 'https://github.com/IgnacioDN/NovaStore/tree/master',
+    github: 'https://github.com/IgnacioDN/NovaStore',
     live: 'https://novastoredn.netlify.app/',
     status: 'completed'
   },

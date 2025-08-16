@@ -46,7 +46,7 @@ const Experience = () => {
       title: 'Key Account Manager',
       company: 'Balloon Group',
       location: 'Buenos Aires, Argentina',
-      period: '2022 - 2025',
+      period: 'Jun.2022 - Feb.2025',
       type: 'Full Time',
       description: [
         'Led end-to-end management of Magento-based ecommerce sites for clients, including product creation, catalog setup, and custom attribute configuration.',
@@ -62,7 +62,7 @@ const Experience = () => {
   title: 'QA Tester',
   company: 'uTest',
   location: 'Remote',
-  period: '2021 - 2023',
+  period: 'Sep.2021 - Sep.2023',
   type: 'Freelance',
   description: [
     'Tested websites and mobile apps for usability, performance, and bugs',
