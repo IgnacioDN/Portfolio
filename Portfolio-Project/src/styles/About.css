@@ -31,8 +31,14 @@
 
 .about-description p {
   font-size: var(--font-size-lg);
-  line-height: 1.6;
+  line-height: 1.8;
   color: var(--text-secondary);
+  margin-bottom: 1.4rem;
+  line-height: 1.6;
+}
+
+.about-description p:last-child {
+  margin-bottom: 0;
 }
 
 .about-stats {
@@ -111,6 +117,8 @@
 /* See More Functionality */
 .description-content {
   transition: all 0.3s ease;
+    padding-bottom: 1em;
+
 }
 
 .see-more-btn {
