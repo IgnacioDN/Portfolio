@@ -165,34 +165,60 @@
   border: 1px solid var(--line-dark);
 }
 
-/* Responsive: scroll horizontal con snap en vez de columna infinita */
+/* Responsive: scroll horizontal con snap, una card a la vez */
 @media (max-width: 900px) {
   .experience-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 1rem;
-    padding: 0.25rem 0.25rem 1rem;
+    padding: 0.25rem 0.25rem 0.5rem;
     margin: 0 -1.25rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: var(--signal) transparent;
+    scrollbar-width: none;
   }
 
   .experience-grid::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .experience-grid::-webkit-scrollbar-thumb {
-    background: var(--signal);
-    border-radius: 4px;
+    display: none;
   }
 
   .experience-card {
-    flex: 0 0 82%;
+    flex: 0 0 100%;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+/* Dots de paginación: ocultos en desktop, visibles solo en mobile */
+.experience-dots {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .experience-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .experience-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    border: none;
+    padding: 0;
+    background: var(--line-dark);
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .experience-dot.active {
+    width: 22px;
+    background: var(--signal);
   }
 }
 
