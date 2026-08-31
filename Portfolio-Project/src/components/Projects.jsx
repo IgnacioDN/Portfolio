@@ -81,12 +81,17 @@ const Projects = () => {
                 </div>
 
                 {/* Cara trasera: captura del proyecto + links */}
-                <div
-                  className="project-face project-face-back"
-                  style={{ backgroundImage: `url(${project.image})` }}
-                >
+                <div className="project-face project-face-back">
+                  <div className="browser-chrome">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div
+                    className="project-screenshot"
+                    style={{ backgroundImage: `url(${project.image})` }}
+                  ></div>
                   <div className="project-face-back-overlay">
-                    <h3 className="project-title">{project.title}</h3>
                     <div className="project-links">
                       <a
                         href={project.github}
