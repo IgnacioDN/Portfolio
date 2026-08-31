@@ -2,12 +2,69 @@
 .contact-section {
   padding: var(--section-padding);
   background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background-image: radial-gradient(var(--line) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  animation: contactDrift 18s linear infinite;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@keyframes contactDrift {
+  from { background-position: 0 0; }
+  to { background-position: 220px 220px; }
 }
 
 .contact-container {
   max-width: 700px;
   margin: 0 auto;
   padding: var(--container-padding);
+  position: relative;
+  z-index: 1;
+}
+
+/* Badge de disponibilidad con punto pulsante */
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  margin: 0 auto 1.25rem;
+  background: var(--bg-primary);
+}
+
+.availability-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3ba55c;
+  position: relative;
+}
+
+.availability-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #3ba55c;
+  animation: pulseRing 1.8s ease-out infinite;
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(2.8); opacity: 0; }
 }
 
 .contact-content {
@@ -63,6 +120,12 @@
   font-size: 1rem;
   margin-right: 1.1rem;
   flex-shrink: 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  background: var(--signal);
+  transform: rotate(-8deg) scale(1.08);
 }
 
 .contact-text { flex: 1; overflow: hidden; min-width: 0; }
