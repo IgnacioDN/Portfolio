@@ -2,7 +2,7 @@
 .hero-section {
   display: flex;
   align-items: center;
-  background: var(--paper);
+  background: var(--ink);
   position: relative;
   overflow: hidden;
   padding: 9rem 0 4rem;
@@ -15,9 +15,8 @@
   right: -40px;
   width: 260px;
   height: 260px;
-  background-image: radial-gradient(var(--line) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(rgba(247, 245, 239, 0.22) 1.5px, transparent 1.5px);
   background-size: 18px 18px;
-  opacity: 0.6;
   pointer-events: none;
 }
 
@@ -63,7 +62,7 @@
   font-family: var(--font-display);
   font-size: var(--font-size-5xl);
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--paper);
   letter-spacing: -0.02em;
   line-height: 1.1;
   opacity: 0;
@@ -72,7 +71,7 @@
 
 .hero-role {
   font-size: var(--font-size-xl);
-  color: var(--text-secondary);
+  color: var(--text-on-dark-muted);
   font-weight: 500;
   opacity: 0;
   animation: fadeInUp 0.6s ease-out 0.3s forwards;
@@ -80,7 +79,7 @@
 
 .hero-description {
   font-size: var(--font-size-lg);
-  color: var(--text-secondary);
+  color: var(--text-on-dark-muted);
   line-height: 1.7;
   max-width: 480px;
   opacity: 0;
@@ -100,18 +99,46 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   padding: 0.35rem 0.75rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-dark);
   border-radius: 999px;
-  color: var(--text-secondary);
+  color: var(--text-on-dark-muted);
 }
 
-/* Hero Buttons */
+/* Hero Buttons: sobreescriben los botones globales para verse bien en fondo oscuro */
 .hero-buttons {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   opacity: 0;
   animation: fadeInUp 0.6s ease-out 0.5s forwards;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 0.875rem 2rem;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+
+.hero-buttons .btn-primary {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: var(--ink);
+}
+
+.hero-buttons .btn-primary:hover {
+  background: var(--paper);
+  border-color: var(--paper);
+}
+
+.hero-buttons .btn-secondary {
+  color: var(--paper);
+  border-color: var(--paper);
+}
+
+.hero-buttons .btn-secondary:hover {
+  background: var(--paper);
+  color: var(--ink);
 }
 
 /* Social Links */
@@ -129,9 +156,9 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: var(--bg-primary);
-  color: var(--text-secondary);
-  border: 1px solid var(--line);
+  background: var(--ink-soft);
+  color: var(--text-on-dark-muted);
+  border: 1px solid var(--line-dark);
   border-radius: 50%;
   text-decoration: none;
   font-size: var(--font-size-lg);
@@ -139,9 +166,9 @@
 }
 
 .social-link:hover {
-  color: var(--paper);
-  background: var(--ink);
-  border-color: var(--ink);
+  color: var(--ink);
+  background: var(--signal);
+  border-color: var(--signal);
   transform: translateY(-2px);
 }
 
@@ -161,7 +188,7 @@
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid var(--ink);
+  border: 3px solid var(--paper);
   transition: all 0.25s ease;
 }
 
