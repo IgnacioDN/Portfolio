@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import '../styles/Experience.css';
 
@@ -52,24 +52,57 @@ const experiences = [
 
 const Experience = () => {
   const cardRefs = useRef([]);
+  const gridRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
+  // Scroll-reveal: cada card aparece al entrar en vista
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const revealObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('in-view');
-            observer.unobserve(entry.target);
+            revealObserver.unobserve(entry.target);
           }
         });
       },
       { threshold: 0.2 }
     );
 
-    cardRefs.current.forEach((el) => el && observer.observe(el));
+    cardRefs.current.forEach((el) => el && revealObserver.observe(el));
 
-    return () => observer.disconnect();
+    return () => revealObserver.disconnect();
   }, []);
+
+  // Detecta qué card está activa mientras se scrollea horizontal (mobile) para marcar el dot
+  useEffect(() => {
+    const gridEl = gridRef.current;
+    if (!gridEl) return undefined;
+
+    const activeObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+            const idx = Number(entry.target.dataset.index);
+            setActiveIndex(idx);
+          }
+        });
+      },
+      { root: gridEl, threshold: 0.6 }
+    );
+
+    cardRefs.current.forEach((el) => el && activeObserver.observe(el));
+
+    return () => activeObserver.disconnect();
+  }, []);
+
+  const goToCard = (index) => {
+    cardRefs.current[index]?.scrollIntoView({
+      behavior: 'smooth',
+      inline: 'start',
+      block: 'nearest',
+    });
+  };
 
   return (
     <section id="experience" className="experience-section">
@@ -80,13 +113,14 @@ const Experience = () => {
           <p className="section-subtitle">Mi recorrido profesional en desarrollo web</p>
         </div>
 
-        <div className="experience-grid">
+        <div className="experience-grid" ref={gridRef}>
           {experiences.map((exp, index) => (
             <div
               key={index}
               ref={(el) => (cardRefs.current[index] = el)}
+              data-index={index}
               className="experience-card"
-              style={{ transitionDelay: `${index * 0.08}s` }}
+              style={{ transitionDelay: `${index * 0.07}s` }}
             >
               <div className="experience-card-top">
                 <span className="experience-index">0{index + 1}</span>
@@ -122,6 +156,19 @@ const Experience = () => {
                 ))}
               </div>
             </div>
+          ))}
+        </div>
+
+        {/* Dots de paginación, solo visibles en mobile (una card a la vez) */}
+        <div className="experience-dots">
+          {experiences.map((_, index) => (
+            <button
+              key={index}
+              type="button"
+              className={`experience-dot ${index === activeIndex ? 'active' : ''}`}
+              onClick={() => goToCard(index)}
+              aria-label={`Ver experiencia ${index + 1}`}
+            ></button>
           ))}
         </div>
       </div>
