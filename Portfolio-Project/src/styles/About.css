@@ -1,8 +1,12 @@
 /* About Section Styles */
 .about-section {
   padding: var(--section-padding);
-  background: var(--bg-primary);
+  background: var(--ink);
 }
+
+.about-section .section-header::before { color: var(--signal); }
+.about-section .section-title { color: var(--paper); }
+.about-section .section-subtitle { color: var(--text-on-dark-muted); }
 
 .about-container {
   max-width: 1280px;
@@ -32,7 +36,11 @@
 .about-description p {
   font-size: var(--font-size-lg);
   line-height: 1.75;
-  color: var(--text-secondary);
+  color: var(--text-on-dark-muted);
+}
+
+.about-description strong {
+  color: var(--paper);
 }
 
 .about-highlights {
@@ -48,8 +56,8 @@
 
 .highlight-card {
   padding: 1.25rem;
-  background: var(--bg-secondary);
-  border: 1px solid var(--line);
+  background: var(--ink-soft);
+  border: 1px solid var(--line-dark);
   border-radius: var(--border-radius-lg);
   transition: all var(--transition-normal);
 }
@@ -69,13 +77,13 @@
   font-family: var(--font-display);
   font-size: var(--font-size-base);
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--paper);
   margin-bottom: 0.4rem;
 }
 
 .highlight-description {
   font-size: var(--font-size-sm);
-  color: var(--text-secondary);
+  color: var(--text-on-dark-muted);
   line-height: 1.55;
 }
 
@@ -86,8 +94,8 @@
 }
 
 .see-more-btn {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--signal);
+  color: var(--ink);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
@@ -100,7 +108,7 @@
 }
 
 .see-more-btn:hover {
-  background: var(--signal);
+  background: var(--paper);
 }
 
 @media (max-width: 768px) {
@@ -134,6 +142,6 @@
     left: 0;
     right: 0;
     height: 1.5rem;
-    background: linear-gradient(transparent, var(--bg-primary));
+    background: linear-gradient(transparent, var(--ink));
   }
 }
