@@ -10,7 +10,7 @@ const Header = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -27,19 +27,22 @@ const Header = () => {
     <header className={`portfolio-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="header-logo">
-          <h2>Portfolio</h2>
+          <h2>
+            IADN<span>.</span>
+          </h2>
         </div>
 
         <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           <ul>
-            <li><button onClick={() => scrollToSection('about')}>About Me</button></li>
+            <li><button onClick={() => scrollToSection('about')}>About</button></li>
             <li><button onClick={() => scrollToSection('experience')}>Experience</button></li>
+            <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
             <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
             <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
           </ul>
         </nav>
 
-        <button 
+        <button
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
