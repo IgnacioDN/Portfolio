@@ -1,5 +1,8 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import nachodnappImg from '../assets/nachodnapp.jpg';
+import novastoreImg from '../assets/novastore.jpg';
+import sonicfinderImg from '../assets/sonicfinder.jpg';
 import '../styles/Projects.css';
 
 const projects = [
@@ -11,7 +14,7 @@ const projects = [
     technologies: ['React', 'Redux Toolkit', 'React Router', 'Axios', 'Bootstrap'],
     github: 'https://github.com/IgnacioDN/Proyecto-Integrador-Educacion-IT',
     live: 'https://nachodn.netlify.app/',
-    image: '/projects/nachodnapp.jpg',
+    image: nachodnappImg,
     status: 'completed',
   },
   {
@@ -22,7 +25,7 @@ const projects = [
     technologies: ['React', 'React Router', 'Context API', 'CSS3', 'Netlify'],
     github: 'https://github.com/IgnacioDN/NovaStore',
     live: 'https://novastoredn.netlify.app/',
-    image: '/projects/novastore.jpg',
+    image: novastoreImg,
     status: 'completed',
   },
   {
@@ -33,7 +36,7 @@ const projects = [
     technologies: ['React', 'React Router', 'Context API', 'CSS3', 'Netlify'],
     github: 'https://github.com/IgnacioDN/SonicFinder25',
     live: 'https://sonicfinder25.netlify.app/',
-    image: '/projects/sonicfinder.jpg',
+    image: sonicfinderImg,
     status: 'completed',
   },
 ];
