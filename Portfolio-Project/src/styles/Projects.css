@@ -1,6 +1,6 @@
 /* Projects Section */
 .projects-section {
-  padding: var(--section-padding);
+  padding: 3.5rem;
   background: var(--ink);
 }
 
