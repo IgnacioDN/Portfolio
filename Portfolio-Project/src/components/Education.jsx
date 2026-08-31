@@ -4,40 +4,28 @@ import '../styles/Education.css';
 
 const certifications = [
   {
-    name: 'React Development Certification',
+    name: 'React JS Developer',
     issuer: 'Educación IT',
-    date: 'Ago. 2026',
+    date: 'May 2026 – Ago 2026',
     skills: ['React', 'Redux Toolkit', 'React Router', 'REST API', 'Axios'],
   },
   {
-    name: 'Front End Development Certification',
-    issuer: 'UTN',
-    date: '2024-2025',
-    skills: ['React', 'JavaScript', 'REST API', 'Bootstrap', 'HTML5', 'CSS3'],
+    name: 'Web Development Diploma (Front-End)',
+    issuer: 'UTN — Universidad Tecnológica Nacional',
+    date: 'Nov 2024 – Feb 2025',
+    skills: ['JavaScript', 'HTML5', 'CSS3', 'Responsive Design', 'Git'],
   },
   {
-    name: 'Adobe Commerce Business Practitioner',
-    issuer: 'Adobe',
-    date: '2024',
-    skills: ['Adobe Commerce', 'Ecommerce', 'Magento', 'Business Strategy'],
-  },
-  {
-    name: 'SQL Fundamentals Course',
-    issuer: 'Udemy',
-    date: '2023',
-    skills: ['SQL', 'MySQL', 'PostgreSQL', 'Data Analysis'],
+    name: 'Business Practitioner Professional',
+    issuer: 'Adobe Commerce',
+    date: 'Jul 2023 – Ene 2024',
+    skills: ['Adobe Commerce', 'Magento', 'Ecommerce'],
   },
   {
     name: 'Software QA Management',
     issuer: 'Educación IT',
-    date: '2021',
+    date: 'Jul 2021 – Dic 2021',
     skills: ['Testing', 'QA', 'Agile', 'Selenium'],
-  },
-  {
-    name: 'JavaScript Fundamentals Course',
-    issuer: 'Fundación Telefónica',
-    date: '2021',
-    skills: ['JavaScript', 'ES6', 'DOM', 'Event Handling'],
   },
 ];
 
