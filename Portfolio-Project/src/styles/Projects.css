@@ -24,7 +24,7 @@
 
 .project-flip {
   perspective: 1600px;
-  height: 420px;
+  height: 360px;
 }
 
 .project-flip-inner {
@@ -122,23 +122,42 @@
   opacity: 0.7;
 }
 
-/* Cara trasera: portada del proyecto */
+/* Cara trasera: portada del proyecto, enmarcada como ventana de navegador */
 .project-face-back {
   transform: rotateY(180deg);
+  background: var(--ink-soft);
+}
+
+.browser-chrome {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.6rem 0.75rem;
+  background: var(--ink);
+}
+
+.browser-chrome span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line-dark);
+}
+
+.project-screenshot {
+  flex: 1;
   background-size: cover;
   background-position: top center;
-  display: flex;
-  align-items: flex-end;
+  position: relative;
 }
 
 .project-face-back-overlay {
-  width: 100%;
-  padding: 1.5rem;
-  background: linear-gradient(180deg, transparent 0%, rgba(20, 23, 31, 0.75) 45%, var(--ink) 100%);
-}
-
-.project-face-back .project-title {
-  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(20, 23, 31, 0.9) 70%);
 }
 
 .project-links {
