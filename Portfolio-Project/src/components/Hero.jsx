@@ -31,6 +31,14 @@ const Hero = () => {
               conectadas a APIs reales y pensadas para producción.
             </p>
 
+            <div className="hero-tags">
+              {['React', 'JavaScript', 'CSS3', 'REST APIs'].map((tag) => (
+                <span key={tag} className="hero-tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
             <div className="hero-buttons">
               <button className="btn-primary" onClick={scrollToContact}>
                 Contactame
