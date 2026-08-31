@@ -11,12 +11,10 @@
 .hero-section::before {
   content: '';
   position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 260px;
-  height: 260px;
-  background-image: radial-gradient(rgba(247, 245, 239, 0.22) 1.5px, transparent 1.5px);
-  background-size: 18px 18px;
+  inset: -20px;
+  background-image: radial-gradient(rgba(247, 245, 239, 0.18) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  animation: bgDrift 18s linear infinite;
   pointer-events: none;
 }
 
@@ -271,6 +269,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero-section::before { animation: none; }
   .hero-greeting, .hero-name, .hero-role, .hero-description,
   .hero-buttons, .hero-social, .hero-image, .hero-scroll-indicator {
     animation: none;
