@@ -266,6 +266,12 @@ textarea:focus {
   }
 }
 
+/* Animación compartida del fondo punteado (Hero, Contact) */
+@keyframes bgDrift {
+  from { background-position: 0 0; }
+  to { background-position: 220px 220px; }
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 768px) {
