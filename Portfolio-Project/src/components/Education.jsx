@@ -4,6 +4,12 @@ import '../styles/Education.css';
 
 const certifications = [
   {
+    name: 'React Development Certification',
+    issuer: 'Educación IT',
+    date: 'Ago. 2026',
+    skills: ['React', 'Redux Toolkit', 'React Router', 'REST API', 'Axios'],
+  },
+  {
     name: 'Front End Development Certification',
     issuer: 'UTN',
     date: '2024-2025',
