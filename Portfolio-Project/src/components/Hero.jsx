@@ -7,10 +7,10 @@ const Hero = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      const offsetTop = contactSection.offsetTop - 100; // 100px de offset hacia arriba
+      const offsetTop = contactSection.offsetTop - 100;
       window.scrollTo({
         top: offsetTop,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   };
@@ -21,37 +21,40 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              <span className="hero-greeting">Hello, I'm</span>
-              <span className="hero-name">Ignacio Agustin Diaz Neila</span>
+              <span className="hero-greeting">Hola, soy</span>
+              <span className="hero-name">Ignacio Agustín Díaz Neila</span>
               <span className="hero-role">Front End Developer</span>
             </h1>
-            
+
             <p className="hero-description">
-I’m a passionate Front End Developer who loves bringing ideas to life in the browser. With skills in React, JavaScript, HTML, CSS, and Bootstrap, I enjoy building interfaces that look great and feel smooth on any device. I work with REST APIs to connect apps to real-world data. I’m always learning and finding new ways to improve the web — one project at a time.
-
-
+              Construyo interfaces con React que se ven bien y funcionan mejor,
+              conectadas a APIs reales y pensadas para producción.
             </p>
-            
+
             <div className="hero-buttons">
               <button className="btn-primary" onClick={scrollToContact}>
-                Get In Touch
+                Contactame
               </button>
-              <a 
-                href="/cv/Ignacio-Agustín-Díaz-Neila-CV.pdf" 
+              <a
+                href="/cv/Ignacio-Agustín-Díaz-Neila-CV.pdf"
                 download="Ignacio-Agustín-Díaz-Neila-CV.pdf"
                 className="btn-secondary"
-                aria-label="Download CV"
+                aria-label="Descargar CV"
               >
                 <FaDownload />
-                Download CV
+                Descargar CV
               </a>
             </div>
-            
+
             <div className="hero-social">
               <a href="https://github.com/IgnacioDN" className="social-link" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/ignacio-agustin-diaz-neila-0359581b4/" className="social-link" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/ignacio-agustin-diaz-neila-0359581b4/"
+                className="social-link"
+                aria-label="LinkedIn"
+              >
                 <FaLinkedin />
               </a>
               <a href="mailto:ignaciodiazneila@gmail.com" className="social-link" aria-label="Email">
@@ -59,18 +62,14 @@ I’m a passionate Front End Developer who loves bringing ideas to life in the b
               </a>
             </div>
           </div>
-          
+
           <div className="hero-image">
             <div className="image-container">
-              <img 
-                src={profileImage} 
-                alt="Profile"
-                className="profile-image"
-              />
+              <img src={profileImage} alt="Ignacio Agustín Díaz Neila" className="profile-image" />
             </div>
           </div>
         </div>
-        
+
         <div className="hero-scroll-indicator">
           <div className="scroll-arrow"></div>
         </div>
