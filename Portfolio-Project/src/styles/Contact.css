@@ -10,15 +10,10 @@
   content: '';
   position: absolute;
   inset: -20px;
-  background-image: radial-gradient(rgba(247, 245, 239, 0.14) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(rgba(247, 245, 239, 0.18) 1.5px, transparent 1.5px);
   background-size: 22px 22px;
-  animation: contactDrift 18s linear infinite;
+  animation: bgDrift 18s linear infinite;
   pointer-events: none;
-}
-
-@keyframes contactDrift {
-  from { background-position: 0 0; }
-  to { background-position: 220px 220px; }
 }
 
 .contact-container {
