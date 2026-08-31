@@ -31,7 +31,7 @@
   --bg-dark: var(--ink);
   --bg-dark-soft: var(--ink-soft);
 
-  --section-padding: 4rem 0;
+  --section-padding: 6rem 0;
   --container-padding: 0 2rem;
   --border-radius: 6px;
   --border-radius-lg: 8px;
@@ -83,6 +83,23 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio-app {
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+/* ---------- Separador entre secciones ---------- */
+
+.about-section,
+.experience-section,
+.skills-section,
+.education-section,
+.projects-section,
+.contact-section {
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-section,
+.education-section,
+.projects-section {
+  border-bottom-color: var(--line-dark);
 }
 
 /* ---------- Encabezados de sección + numeración editorial ---------- */
@@ -251,7 +268,7 @@ textarea:focus {
 
 @media (max-width: 768px) {
   :root {
-    --section-padding: 2rem 0;
+    --section-padding: 3.5rem 0;
     --container-padding: 0 1.25rem;
     --font-size-4xl: 1.9rem;
     --font-size-3xl: 1.5rem;
