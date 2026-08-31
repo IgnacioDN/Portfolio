@@ -35,6 +35,10 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <div className="contact-container">
         <div className="section-header">
+          <span className="availability-badge">
+            <span className="availability-dot"></span>
+            Disponible para nuevos proyectos
+          </span>
           <h2 className="section-title">Get In Touch</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">Let's connect and discuss opportunities</p>
