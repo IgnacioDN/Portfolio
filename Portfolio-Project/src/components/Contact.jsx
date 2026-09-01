@@ -39,9 +39,9 @@ const Contact = () => {
             <span className="availability-dot"></span>
             Disponible para nuevos proyectos
           </span>
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 className="section-title">Contacto</h2>
           <div className="title-underline"></div>
-          <p className="section-subtitle">Let's connect and discuss opportunities</p>
+          <p className="section-subtitle">Cualquier consulta para tu proyecto será respondida</p>
         </div>
 
         <div className="contact-content">
