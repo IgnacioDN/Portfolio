@@ -65,7 +65,7 @@ const Education = () => {
     <section id="education" className="education-section">
       <div className="education-container">
         <div className="section-header">
-          <h2 className="section-title">Certifications</h2>
+          <h2 className="section-title">Certificaciones</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">Formación continua y certificaciones profesionales</p>
         </div>
