@@ -108,9 +108,9 @@ const Experience = () => {
     <section id="experience" className="experience-section">
       <div className="experience-container">
         <div className="section-header">
-          <h2 className="section-title">Work Experience</h2>
+          <h2 className="section-title">Experiencia Laboral</h2>
           <div className="title-underline"></div>
-          <p className="section-subtitle">Mi recorrido profesional en desarrollo web</p>
+          <p className="section-subtitle">Mi recorrido profesional en IT</p>
         </div>
 
         <div className="experience-grid" ref={gridRef}>
