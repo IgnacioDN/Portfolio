@@ -167,16 +167,18 @@
 
 /* Responsive: scroll horizontal con snap, una card a la vez */
 @media (max-width: 900px) {
-    .experience-grid {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 1rem;
-        margin: 0;
-        padding: .25rem 1.25rem .5rem;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
+  .experience-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    margin: 0;
+    padding: .25rem 1.25rem .5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    touch-action: pan-x;
+    overscroll-behavior-x: contain;
+  }
 
   .experience-grid::-webkit-scrollbar {
     display: none;
@@ -184,7 +186,7 @@
 
   .experience-card {
     flex: 0 0 100%;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     scroll-snap-stop: always;
     padding: 1.25rem;
     text-align: center;
@@ -222,10 +224,10 @@
     justify-content: center;
   }
 
-    .experience-description {
-        text-align: left;
-        margin-bottom: 0 !important;
-    }
+  .experience-description {
+    text-align: left;
+    margin-bottom: 0 !important;
+  }
 
   .experience-description li {
     font-size: 0.8rem;
