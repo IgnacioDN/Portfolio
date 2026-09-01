@@ -21,22 +21,23 @@ const About = () => {
     {
       icon: <FaCode />,
       title: 'Código limpio',
-      description: 'Código mantenible y escalable, siguiendo buenas prácticas.',
+      description:
+        'Componentes reutilizables y mantenibles, pensados para quien los toque después — incluido yo mismo en 6 meses.',
     },
     {
       icon: <FaLightbulb />,
       title: 'Resolución de problemas',
-      description: 'Enfoque creativo ante desafíos complejos.',
+      description: 'Ante un bug o un requerimiento ambiguo, primero entiendo el porqué; después programo.',
     },
     {
       icon: <FaUsers />,
       title: 'Trabajo en equipo',
-      description: 'Colaborativo, con buena comunicación.',
+      description: 'Cómodo tanto liderando la parte técnica de un proyecto como sumándome a un equipo ya armado.',
     },
     {
       icon: <FaRocket />,
       title: 'Aprendizaje rápido',
-      description: 'Me adapto rápido a nuevas tecnologías.',
+      description: 'De Redux Toolkit a testing con Selenium: me meto de lleno en tecnologías nuevas cuando el proyecto lo pide.',
     },
   ];
 
@@ -44,7 +45,7 @@ const About = () => {
     <section id="about" className="about-section">
       <div className="about-container">
         <div className="section-header">
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title">Acerca De Mi</h2>
           <div className="title-underline"></div>
         </div>
 
@@ -53,15 +54,17 @@ const About = () => {
             <div className="about-description">
               <div className={`description-content ${isMobile && !isExpanded ? 'collapsed' : ''}`}>
                 <p>
-                  Soy Front End Developer especializado en <strong>React</strong>,{' '}
-                  <strong>JavaScript</strong> y ecommerce (Magento/Adobe Commerce). Me interesa
-                  transformar ideas en interfaces prolijas, rápidas y fáciles de mantener.
+                  Front End Developer especializado en <strong>React</strong> y ecommerce, con
+                  experiencia real en producción sobre <strong>Magento</strong> y{' '}
+                  <strong>Adobe Commerce</strong>. Construyo interfaces que no solo se ven bien:
+                  cargan rápido, funcionan en todos los dispositivos y están pensadas para
+                  convertir.
                 </p>
-
                 <p>
-                  Trabajo tanto en equipo como de forma independiente, con foco en código limpio
-                  y en resolver problemas reales — no solo escribir código que funcione, sino que
-                  se pueda mantener.
+                  Antes de escribir código, entiendo el problema que hay detrás. Eso me llevó a
+                  migrar proyectos de estado local a arquitecturas escalables con Redux, y a
+                  integrar APIs REST reales en vez de quedarme con datos de prueba — la diferencia
+                  entre un ejercicio de portfolio y algo listo para producción.
                 </p>
               </div>
 
