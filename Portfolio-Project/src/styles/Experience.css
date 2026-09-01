@@ -188,6 +188,59 @@
     flex: 0 0 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .experience-card-top {
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0.6rem;
+  }
+
+  .experience-icon {
+    position: absolute;
+    right: 0;
+  }
+
+  .experience-type {
+    margin: 0 auto 0.75rem;
+  }
+
+  .experience-title {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .experience-meta {
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .experience-location,
+  .experience-period {
+    justify-content: center;
+  }
+
+  .experience-description {
+    text-align: left;
+    margin-bottom: 0.9rem;
+  }
+
+  .experience-description li {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Solo las primeras 3 bullets en mobile, para no estirar tanto la card */
+  .experience-description li:nth-child(n + 4) {
+    display: none;
+  }
+
+  .experience-technologies {
+    justify-content: center;
   }
 }
 
