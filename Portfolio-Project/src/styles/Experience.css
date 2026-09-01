@@ -224,10 +224,10 @@
     justify-content: center;
   }
 
-  .experience-description {
-    text-align: left;
-    margin-bottom: 0.9rem;
-  }
+    .experience-description {
+        text-align: left;
+        margin-bottom: 0 !important;
+    }
 
   .experience-description li {
     font-size: 0.8rem;
