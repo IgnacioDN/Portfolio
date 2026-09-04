@@ -10,11 +10,11 @@
   padding: var(--container-padding);
 }
 
-.experience-section .section-header::before { color: var(--signal); margin-bottom: 1.5rem !important; }
-.experience-section .section-title { color: var(--paper); }
-.experience-section .section-subtitle { color: var(--text-on-dark-muted); }
+.experience-section .section-header::before { color: var(--signal); }
+.experience-section .section-header {margin-bottom: 1.5rem !important;}
+.experience-section .section-title {color: var(--paper);}
+.experience-section .section-subtitle {color: var(--text-on-dark-muted);}
 
-/* Grid horizontal: 3 puestos lado a lado, sin timeline vertical */
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
