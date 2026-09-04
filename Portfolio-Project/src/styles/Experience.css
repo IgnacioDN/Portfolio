@@ -25,7 +25,7 @@
   background: var(--ink-soft);
   border: 1px solid var(--line-dark);
   border-radius: var(--border-radius-lg);
-  padding: 1.25rem;
+  padding: 1.25rem !important;
   display: flex;
   flex-direction: column;
   transition: border-color 0.25s ease, transform 0.25s ease, opacity 0.5s ease,
