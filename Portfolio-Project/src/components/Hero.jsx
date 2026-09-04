@@ -23,16 +23,17 @@ const Hero = () => {
             <h1 className="hero-title">
               <span className="hero-greeting">Hola, soy</span>
               <span className="hero-name">Ignacio Agustín Díaz Neila</span>
-              <span className="hero-role">Front End Developer</span>
+              <span className="hero-role">Front End Developer · Disponible para nuevas oportunidades</span>
             </h1>
 
             <p className="hero-description">
-              Construyo interfaces con React que se ven bien y funcionan mejor,
-              conectadas a APIs reales y pensadas para producción.
+              Especializado en React y ecommerce (Magento, Adobe Commerce), con experiencia
+              real en producción construyendo interfaces rápidas, responsive y conectadas a
+              APIs.
             </p>
 
             <div className="hero-tags">
-              {['React', 'JavaScript', 'CSS3', 'REST APIs'].map((tag) => (
+              {['React', 'JavaScript', 'Redux Toolkit', 'REST APIs'].map((tag) => (
                 <span key={tag} className="hero-tag">
                   {tag}
                 </span>
