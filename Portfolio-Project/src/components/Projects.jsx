@@ -46,7 +46,7 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       <div className="projects-container">
         <div className="section-header">
-          <h2 className="section-title">My Projects</h2>
+          <h2 className="section-title">Proyectos</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">Pasá el mouse sobre cada proyecto para ver la portada</p>
         </div>
