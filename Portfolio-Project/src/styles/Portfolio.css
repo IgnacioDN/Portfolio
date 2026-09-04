@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-header {
   text-align: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
   letter-spacing: 0.35em;
   color: var(--signal);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .section-title {
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 3px;
   background: var(--signal);
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 1rem;
   border-radius: 2px;
 }
 
