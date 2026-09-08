@@ -23,7 +23,7 @@ const Hero = () => {
             <h1 className="hero-title">
               <span className="hero-greeting">Hola, soy</span>
               <span className="hero-name">Ignacio Agustín Díaz Neila</span>
-              <span className="hero-role">Front End Developer · Disponible para nuevas oportunidades</span>
+              <span className="hero-role">Front End Developer</span>
             </h1>
 
             <p className="hero-description">
