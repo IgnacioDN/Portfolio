@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import nachodnappImg from '../assets/nachodnapp.jpg';
-import novastoreImg from '../assets/novastore.jpg';
+import urban27Img from '../assets/urban27.jpg';
 import sonicfinderImg from '../assets/sonicfinder.jpg';
 import '../styles/Projects.css';
 
@@ -25,7 +25,7 @@ const projects = [
     technologies: ['React', 'React Router', 'Context API', 'CSS3', 'Netlify'],
     github: 'https://github.com/IgnacioDN/NovaStore',
     live: 'https://novastoredn.netlify.app/',
-    image: novastoreImg,
+    image: urban27Img,
     status: 'completed',
   },
   {
