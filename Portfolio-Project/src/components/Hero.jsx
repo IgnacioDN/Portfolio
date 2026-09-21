@@ -27,8 +27,7 @@ const Hero = () => {
             </h1>
 
             <p className="hero-description">
-              Especializado en React y ecommerce (Magento, Adobe Commerce), con experiencia
-              real en producción construyendo interfaces rápidas, responsive y conectadas a
+              Especializado en React y en Ecommerce, busco construir interfaces rápidas, responsive y conectadas a
               APIs.
             </p>
 
