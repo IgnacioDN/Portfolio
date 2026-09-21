@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import nachodnappImg from '../assets/nachodnapp.jpg';
-import novastoreImg from '../assets/novastore.jpg';
+import urban27Img from '../assets/urban27.png';
 import sonicfinderImg from '../assets/sonicfinder.jpg';
 import '../styles/Projects.css';
 
@@ -46,7 +46,7 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       <div className="projects-container">
         <div className="section-header">
-          <h2 className="section-title">My Projects</h2>
+          <h2 className="section-title">Mis Proyectos</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">Pasá el mouse sobre cada proyecto para ver la portada</p>
         </div>
