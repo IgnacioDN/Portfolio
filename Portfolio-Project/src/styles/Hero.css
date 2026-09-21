@@ -239,6 +239,9 @@
 }
 
 @media (max-width: 768px) {
+  .hero-scroll-indicator {
+    bottom: 0.6rem;
+  }
   .hero-section {
     padding: 6.5rem 0 3rem;
   }
