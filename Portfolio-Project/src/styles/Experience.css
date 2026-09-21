@@ -11,10 +11,10 @@
 }
 
 .experience-section .section-header::before { color: var(--signal); }
-.experience-section .section-header {margin-bottom: 1.5rem !important;}
-.experience-section .section-title {color: var(--paper);}
-.experience-section .section-subtitle {color: var(--text-on-dark-muted);}
+.experience-section .section-title { color: var(--paper); }
+.experience-section .section-subtitle { color: var(--text-on-dark-muted); }
 
+/* Grid horizontal: 3 puestos lado a lado, sin timeline vertical */
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -25,7 +25,7 @@
   background: var(--ink-soft);
   border: 1px solid var(--line-dark);
   border-radius: var(--border-radius-lg);
-  padding: 1.25rem !important;
+  padding: 1.75rem;
   display: flex;
   flex-direction: column;
   transition: border-color 0.25s ease, transform 0.25s ease, opacity 0.5s ease,
@@ -96,12 +96,12 @@
 }
 
 .experience-meta {
-    display: flex;
-    flex-direction: column;
-    gap: .35rem;
-    margin-bottom: .85rem;
-    padding-bottom: .5rem;
-    border-bottom: 1px solid var(--line-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line-dark);
 }
 
 .company-name {
@@ -125,10 +125,10 @@
 
 /* Description */
 .experience-description {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0.5rem;
-    flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+  flex-grow: 1;
 }
 
 .experience-description li {
@@ -176,7 +176,7 @@
     padding: .25rem 1.25rem .5rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
     overscroll-behavior-x: contain;
   }
 
@@ -247,14 +247,6 @@
 /* Dots de paginación: ocultos en desktop, visibles solo en mobile */
 .experience-dots {
   display: none;
-}
-
-.title-underline {
-    width: 40px;
-    height: 3px;
-    background: var(--signal);
-    margin: 0 auto 1.25rem !important;
-    border-radius: 2px;
 }
 
 @media (max-width: 900px) {
