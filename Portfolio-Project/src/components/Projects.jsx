@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import nachodnappImg from '../assets/nachodnapp.jpg';
-import urban27Img from '../assets/urban27.jpg';
+import novastoreImg from '../assets/novastore.jpg';
 import sonicfinderImg from '../assets/sonicfinder.jpg';
 import '../styles/Projects.css';
 
@@ -19,13 +19,13 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Urban27 Ecommerce',
+    title: 'NovaStore Ecommerce',
     description:
       'App de ecommerce responsive con catálogo, filtros, carrito y flujo de checkout, con foco en performance y UI/UX moderna.',
     technologies: ['React', 'React Router', 'Context API', 'CSS3', 'Netlify'],
     github: 'https://github.com/IgnacioDN/NovaStore',
-    live: 'https://novastoredn.netlify.app/',
-    image: urban27Img,
+    live: 'https://urban27.netlify.app/',
+    image: novastoreImg,
     status: 'completed',
   },
   {
@@ -46,7 +46,7 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       <div className="projects-container">
         <div className="section-header">
-          <h2 className="section-title">Proyectos</h2>
+          <h2 className="section-title">My Projects</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">Pasá el mouse sobre cada proyecto para ver la portada</p>
         </div>
