@@ -31,7 +31,7 @@
   --bg-dark: var(--ink);
   --bg-dark-soft: var(--ink-soft);
 
-  --section-padding: 3.6rem 0;
+  --section-padding: 4rem 0;
   --container-padding: 0 2rem;
   --border-radius: 6px;
   --border-radius-lg: 8px;
@@ -98,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-section,
 .experience-section,
+.skills-section,
 .education-section,
 .projects-section,
 .contact-section {
@@ -108,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   position: relative;
 }
 
@@ -120,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
   letter-spacing: 0.35em;
   color: var(--signal);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .section-title {
@@ -128,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size-4xl);
   font-weight: 700;
   color: var(--text-primary);
+  margin-bottom: 0.75rem;
   letter-spacing: -0.01em;
 }
 
@@ -135,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 3px;
   background: var(--signal);
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.25rem;
   border-radius: 2px;
 }
 
