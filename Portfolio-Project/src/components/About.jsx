@@ -22,7 +22,7 @@ const About = () => {
       icon: <FaCode />,
       title: 'Código limpio',
       description:
-        'Componentes reutilizables y mantenibles, pensados para quien los toque después — incluido yo mismo en 6 meses.',
+        'Componentes reutilizables y mantenibles.',
     },
     {
       icon: <FaLightbulb />,
@@ -32,7 +32,7 @@ const About = () => {
     {
       icon: <FaUsers />,
       title: 'Trabajo en equipo',
-      description: 'Cómodo tanto liderando la parte técnica de un proyecto como sumándome a un equipo ya armado.',
+      description: 'Cómodo tanto sumándome a un equipo con procesos ya definidos como resolviendo de forma más autónoma cuando hace falta.',
     },
     {
       icon: <FaRocket />,
@@ -54,17 +54,16 @@ const About = () => {
             <div className="about-description">
               <div className={`description-content ${isMobile && !isExpanded ? 'collapsed' : ''}`}>
                 <p>
-                  Front End Developer especializado en <strong>React</strong> y ecommerce, con
-                  experiencia real en producción sobre <strong>Magento</strong> y{' '}
-                  <strong>Adobe Commerce</strong>. Construyo interfaces que no solo se ven bien:
-                  cargan rápido, funcionan en todos los dispositivos y están pensadas para
-                  convertir.
+                  Mi camino en tecnología empezó en <strong>QA testing</strong> y gestión de
+                  cuentas ecommerce, antes de especializarme en desarrollo front end. Esa
+                  combinación me da una ventaja poco común: entiendo el negocio y al usuario
+                  final detrás del código, no solo cómo escribirlo.
                 </p>
                 <p>
-                  Antes de escribir código, entiendo el problema que hay detrás. Eso me llevó a
-                  migrar proyectos de estado local a arquitecturas escalables con Redux, y a
-                  integrar APIs REST reales en vez de quedarme con datos de prueba — la diferencia
-                  entre un ejercicio de portfolio y algo listo para producción.
+                  Hoy trabajo con <strong>React</strong>, <strong>Redux Toolkit</strong> y APIs
+                  REST, construyendo interfaces rápidas y responsive. Busco un equipo donde
+                  pueda seguir creciendo como developer, sumando además esa mirada de producto
+                  que traigo de mi experiencia previa en ecommerce.
                 </p>
               </div>
 
