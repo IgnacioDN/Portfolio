@@ -54,15 +54,15 @@ const About = () => {
             <div className="about-description">
               <div className={`description-content ${isMobile && !isExpanded ? 'collapsed' : ''}`}>
                 <p>
-                  Mi camino en tecnología empezó en <strong>QA testing</strong> y gestión de
-                  cuentas ecommerce, antes de especializarme en desarrollo front end. Esa
-                  combinación me da una ventaja poco común: entiendo el negocio y al usuario
-                  final detrás del código, no solo cómo escribirlo.
+                  Mi camino en tecnología empezó como <strong>QA Tester</strong> y <strong>Key Account Manager</strong>,
+                  antes de especializarme en <strong>desarrollo front end</strong>. Con los años de experiencia, esa
+                  combinación me da la posibilidad de entender al usuario y a la finalidad del negocio
+                  detrás del código.
                 </p>
                 <p>
-                  Hoy trabajo con <strong>React</strong>, <strong>Redux Toolkit</strong> y APIs
-                  REST, construyendo interfaces rápidas y responsive. Busco un equipo donde
-                  pueda seguir creciendo como developer, sumando además esa mirada de producto
+                  Hoy, además de trabajar dentro de un equipo de e-commerce tambien trabajo con tecnologías como <strong>React</strong>, <strong>Redux Toolkit</strong> y APIs
+                  REST, construyendo interfaces rápidas y responsive. Busco 
+                  seguir creciendo como developer, sumando además esa mirada de producto
                   que traigo de mi experiencia previa en ecommerce.
                 </p>
               </div>
