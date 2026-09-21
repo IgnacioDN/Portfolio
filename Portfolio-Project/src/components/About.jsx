@@ -37,7 +37,7 @@ const About = () => {
     {
       icon: <FaRocket />,
       title: 'Aprendizaje rápido',
-      description: 'De Redux Toolkit a testing con Selenium: me meto de lleno en tecnologías nuevas cuando el proyecto lo pide.',
+      description: 'De Redux Toolkit a Adobe Commerce Magento: me meto de lleno en tecnologías nuevas cuando el proyecto lo pide.',
     },
   ];
 
