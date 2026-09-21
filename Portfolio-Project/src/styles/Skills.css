@@ -1,8 +1,12 @@
 /* Skills Section */
 .skills-section {
   padding: var(--section-padding);
-  background: var(--bg-primary);
+  background: var(--ink);
 }
+
+.skills-section .section-header::before { color: var(--signal); }
+.skills-section .section-title { color: var(--paper); }
+.skills-section .section-subtitle { color: var(--text-on-dark-muted); }
 
 .skills-container {
   max-width: 1000px;
@@ -24,7 +28,7 @@
   gap: 0.6rem;
   margin-bottom: 1rem;
   padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line-dark);
 }
 
 .category-icon {
@@ -36,7 +40,7 @@
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--text-on-dark-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -52,10 +56,10 @@
   align-items: center;
   gap: 0.4rem;
   padding: 0.4rem 0.8rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-dark);
   border-radius: var(--border-radius);
   font-size: 0.85rem;
-  color: var(--text-primary);
+  color: var(--paper);
   transition: all 0.2s ease;
 }
 
