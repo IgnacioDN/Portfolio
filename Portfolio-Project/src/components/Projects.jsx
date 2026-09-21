@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'NovaStore Ecommerce',
+    title: 'Urban27 Ecommerce',
     description:
       'App de ecommerce responsive con catálogo, filtros, carrito y flujo de checkout, con foco en performance y UI/UX moderna.',
     technologies: ['React', 'React Router', 'Context API', 'CSS3', 'Netlify'],
