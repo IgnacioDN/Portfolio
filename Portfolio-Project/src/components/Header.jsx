@@ -23,21 +23,26 @@ const Header = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setMenuOpen(false);
+  };
+
   return (
     <header className={`portfolio-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <div className="header-logo">
+        <button className="header-logo" onClick={scrollToTop} aria-label="Ir arriba">
           <h2>
             IADN<span>.</span>
           </h2>
-        </div>
+        </button>
 
         <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           <ul>
             <li><button onClick={() => scrollToSection('about')}>About</button></li>
             <li><button onClick={() => scrollToSection('experience')}>Experience</button></li>
             <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
-            <li><button onClick={() => scrollToSection('education')}>Projects</button></li>
+            <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
             <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
           </ul>
         </nav>
