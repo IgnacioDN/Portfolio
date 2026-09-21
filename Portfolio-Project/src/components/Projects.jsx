@@ -23,9 +23,9 @@ const projects = [
     description:
       'App de ecommerce responsive con catálogo, filtros, carrito y flujo de checkout, con foco en performance y UI/UX moderna.',
     technologies: ['React', 'React Router', 'Context API', 'CSS3', 'Netlify'],
-    github: 'https://github.com/IgnacioDN/NovaStore',
+    github: 'https://github.com/IgnacioDN/Urban27',
     live: 'https://urban27.netlify.app/',
-    image: novastoreImg,
+    image: urban27Img,
     status: 'completed',
   },
   {
