@@ -11,7 +11,7 @@ const skillCategories = [
       { name: 'React.js', icon: <FaReact /> },
       { name: 'JavaScript (ES6+)', icon: <FaJs /> },
       { name: 'HTML5 / CSS3', icon: <FaHtml5 /> },
-      { name: 'TypeScript', icon: <SiTypescript />, learning: true },
+      { name: 'TypeScript', icon: <SiTypescript />},
     ],
   },
   {
@@ -20,7 +20,7 @@ const skillCategories = [
     skills: [
       { name: 'REST APIs', icon: <FaServer /> },
       { name: 'Async state management', icon: <FaSyncAlt /> },
-      { name: 'Context API / Redux', icon: <SiRedux />, learning: true },
+      { name: 'Context API / Redux', icon: <SiRedux />},
     ],
   },
   {
