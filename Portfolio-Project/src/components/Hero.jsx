@@ -43,13 +43,22 @@ const Hero = () => {
                 Contactame
               </button>
               <a
-                href="/cv/Ignacio-Agustín-Díaz-Neila-CV.pdf"
-                download="Ignacio-Agustín-Díaz-Neila-CV.pdf"
+                href="/cv/Ignacio-Diaz-Neila-CV-EN.pdf"
+                download="Ignacio-Diaz-Neila-CV-EN.pdf"
                 className="btn-secondary"
-                aria-label="Descargar CV"
+                aria-label="Download CV in English"
               >
                 <FaDownload />
-                Descargar CV
+                CV (EN)
+              </a>
+              <a
+                href="/cv/Ignacio-Diaz-Neila-CV-ES.pdf"
+                download="Ignacio-Diaz-Neila-CV-ES.pdf"
+                className="btn-secondary"
+                aria-label="Descargar CV en español"
+              >
+                <FaDownload />
+                CV (ES)
               </a>
             </div>
 
