@@ -12,6 +12,7 @@ const skillCategories = [
       { name: 'JavaScript (ES6+)', icon: <FaJs /> },
       { name: 'HTML5 / CSS3', icon: <FaHtml5 /> },
       { name: 'TypeScript', icon: <SiTypescript />},
+      { name: 'Next.js / Tailwind CSS', icon: <FaReact /> },
     ],
   },
   {
@@ -21,6 +22,7 @@ const skillCategories = [
       { name: 'REST APIs', icon: <FaServer /> },
       { name: 'Async state management', icon: <FaSyncAlt /> },
       { name: 'Context API / Redux', icon: <SiRedux />},
+      { name: 'Supabase / Zod', icon: <FaServer /> },
     ],
   },
   {
@@ -35,7 +37,7 @@ const skillCategories = [
     title: 'Herramientas & Ecommerce',
     icon: <FaCloud />,
     skills: [
-      { name: 'Git / GitHub', icon: <FaGitAlt /> },
+      { name: 'Git / GitHub / Vitest / CI', icon: <FaGitAlt /> },
       { name: 'Adobe Commerce (Magento)', icon: <FaCloud /> },
     ],
   },

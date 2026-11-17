@@ -1,11 +1,23 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import ritmobaImg from '../assets/ritmoba.jpg';
 import nachodnappImg from '../assets/nachodnapp.jpg';
 import urban27Img from '../assets/urban27.png';
 import sonicfinderImg from '../assets/sonicfinder.jpg';
 import '../styles/Projects.css';
 
 const projects = [
+  {
+    id: 0,
+    title: 'Ritmo BA',
+    description:
+      'App full-stack para descubrir eventos en Buenos Aires: búsqueda en lenguaje natural con IA (Gemini validado con Zod y fallback por palabras clave), login, favoritos y reseñas con Supabase (RLS), mapa con Google Maps, tests con Vitest y CI en GitHub Actions.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Zod', 'Gemini API'],
+    github: 'https://github.com/IgnacioDN/pulso-ba',
+    live: 'https://ritmo-ba.vercel.app',
+    image: ritmobaImg,
+    status: 'completed',
+  },
   {
     id: 1,
     title: 'NachoDnApp Ecommerce',

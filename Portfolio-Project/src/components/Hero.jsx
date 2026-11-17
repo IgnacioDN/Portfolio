@@ -27,11 +27,11 @@ const Hero = () => {
             </h1>
 
             <p className="hero-description">
-              Especializado en React y en Ecommerce, busco construir interfaces rápidas y modernas que se adapten a las necesidades de cada empresa.
+              Frontend developer con React y TypeScript, con más de 3 años en ecommerce (Adobe Commerce). Construyo interfaces rápidas, accesibles y responsive, y hoy sumo Next.js y Supabase.
             </p>
 
             <div className="hero-tags">
-              {['React', 'JavaScript', 'Redux Toolkit', 'REST APIs'].map((tag) => (
+              {['React', 'TypeScript', 'Next.js', 'REST APIs'].map((tag) => (
                 <span key={tag} className="hero-tag">
                   {tag}
                 </span>

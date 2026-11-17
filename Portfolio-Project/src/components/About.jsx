@@ -60,10 +60,11 @@ const About = () => {
                   detrás del código.
                 </p>
                 <p>
-                  Hoy, además de trabajar dentro de un equipo de e-commerce tambien trabajo con tecnologías como <strong>React</strong>, <strong>Redux Toolkit</strong> y APIs
-                  REST, construyendo interfaces rápidas y responsive. Busco 
-                  seguir creciendo como developer, sumando además esa mirada de producto
-                  que traigo de mi experiencia previa en ecommerce.
+                  Hoy trabajo en un equipo de e-commerce y desarrollo con <strong>React</strong>,
+                  <strong> TypeScript</strong> y <strong>Next.js</strong>. Mi último proyecto, Ritmo BA,
+                  es una app full-stack con login, base de datos y búsqueda con IA. Me importan los
+                  casos borde, la accesibilidad y los estados de error, y busco seguir creciendo como
+                  developer en un equipo remoto.
                 </p>
               </div>
 
